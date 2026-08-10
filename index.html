@@ -39,15 +39,249 @@
     <!-- ===== HERO ===== -->
     <section class="hero" id="inicio">
         <div class="overlay"></div>
-        <div class="hero-content">
-            <h3>BEM-VINDO À</h3>
-            <h2>CASA DO CAMINHONEIRO</h2>
-            <p>Soluções completas para quem move o Brasil. RNTRC/ANTT Assessoria especializada para Caminhoneiros Autônomos e Transportadoras. Tudo que precisa você encontra aqui!</p>
+
+        <!-- CARROSSEL DE CONTEÚDO SOBRE A IMAGEM -->
+        <div class="hero-content hero-carousel">
+            <div class="hero-slide active">
+                <span class="hero-kicker">BEM-VINDO À</span>
+                <h2>CASA DO CAMINHONEIRO</h2>
+                <p>Soluções completas para quem move o Brasil. RNTRC/ANTT. Assessoria especializada para Caminhoneiros Autônomos e Transportadoras. Tudo que precisa você encontra aqui!</p>
+            </div>
+
+            <div class="hero-slide">
+                <span class="hero-kicker">CAPACITAÇÃO PROFISSIONAL</span>
+                <h2>ESPECIALIZADA PARA TRANSPORTADORES</h2>
+                <p>Formação e atualização para profissionais do transporte, com cursos voltados à segurança, regulamentação e operação.</p>
+                <h4>CURSOS EM DESTAQUE</h4>
+                <ul class="hero-course-list">
+                    <li><strong>Curso MOPP</strong> — Movimentação Operacional de Produtos Perigosos. Formação e Atualização.</li>
+                    <li><strong>Cargas Indivisíveis</strong> — Transporte de Cargas Excepcionais e Excedentes.</li>
+                    <li><strong>Escolar e Emergência</strong> — Transporte Escolar e Veículos de Emergência. Regulamentação e Segurança.</li>
+                    <li><strong>Passageiro Coletivo</strong> — Transporte Coletivo de Passageiros. Normas e Condução Defensiva.</li>
+                    <li><strong>Curso NR-20 / NR-35</strong> — Segurança no Trabalho com Inflamáveis e em Altura.</li>
+                </ul>
+            </div>
+
+            <div class="hero-slide">
+                <span class="hero-kicker">SOLUÇÕES COMPLETAS</span>
+                <h2>PARA SEU NEGÓCIO DE TRANSPORTES</h2>
+                <div class="hero-services">
+                    <div><strong>Consórcio</strong><span>Planos de aquisição programada de caminhões e carretas com taxas competitivas.</span></div>
+                    <div><strong>Rastreador</strong><span>Monitoramento em tempo real e segurança avançada para sua frota.</span></div>
+                    <div><strong>Proteção Veicular</strong><span>Cobertura abrangente contra roubo, furto, colisão e terceiros.</span></div>
+                    <div><strong>Seguros</strong><span>Parcerias com as melhores seguradoras para todos os tipos de risco.</span></div>
+                    <div><strong>Venda de Carretas e Caminhões</strong><span>Novos e seminovos revisados e prontos para rodar.</span></div>
+                    <div><strong>Financiamentos</strong><span>Crédito facilitado e linhas de financiamento personalizadas.</span></div>
+                </div>
+            </div>
+
+            <div class="hero-carousel-controls">
+                <button class="hero-prev" aria-label="Slide anterior">&#10094;</button>
+                <div class="hero-dots" aria-label="Navegação do carrossel">
+                    <button class="hero-dot active" aria-label="Slide 1"></button>
+                    <button class="hero-dot" aria-label="Slide 2"></button>
+                    <button class="hero-dot" aria-label="Slide 3"></button>
+                </div>
+                <button class="hero-next" aria-label="Próximo slide">&#10095;</button>
+            </div>
+
             <div class="hero-buttons">
                 <a href="#contato" class="btn btn-primary">Fale Conosco</a>
                 <a href="#servicos" class="btn btn-secondary">Nossos Serviços</a>
             </div>
         </div>
+
+        <style>
+            .hero-carousel {
+                position: relative;
+                z-index: 2;
+                width: min(900px, 92%);
+                min-height: 430px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                margin: 0 auto;
+            }
+
+            .hero-slide {
+                display: none;
+                animation: heroFade .55s ease;
+            }
+
+            .hero-slide.active {
+                display: block;
+            }
+
+            .hero-kicker {
+                display: inline-block;
+                margin-bottom: 8px;
+                font-size: .95rem;
+                font-weight: 800;
+                letter-spacing: 2px;
+            }
+
+            .hero-slide h2 {
+                margin-bottom: 14px;
+            }
+
+            .hero-slide h4 {
+                margin: 18px 0 10px;
+                font-size: 1rem;
+                letter-spacing: 1px;
+            }
+
+            .hero-course-list {
+                list-style: none;
+                padding: 0;
+                margin: 0 auto;
+                max-width: 760px;
+                text-align: left;
+                display: grid;
+                gap: 7px;
+                font-size: .92rem;
+            }
+
+            .hero-course-list li {
+                background: rgba(0,0,0,.28);
+                padding: 7px 10px;
+                border-radius: 6px;
+            }
+
+            .hero-services {
+                max-width: 850px;
+                margin: 0 auto;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 9px;
+                text-align: left;
+            }
+
+            .hero-services div {
+                background: rgba(0,0,0,.28);
+                padding: 9px 11px;
+                border-radius: 7px;
+            }
+
+            .hero-services strong,
+            .hero-services span {
+                display: block;
+            }
+
+            .hero-services strong {
+                margin-bottom: 3px;
+            }
+
+            .hero-services span {
+                font-size: .84rem;
+                line-height: 1.35;
+            }
+
+            .hero-carousel-controls {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 14px;
+                margin-top: 18px;
+            }
+
+            .hero-prev,
+            .hero-next {
+                border: 0;
+                background: rgba(0,0,0,.35);
+                color: #fff;
+                width: 34px;
+                height: 34px;
+                border-radius: 50%;
+                cursor: pointer;
+                font-size: 18px;
+            }
+
+            .hero-dots {
+                display: flex;
+                gap: 7px;
+            }
+
+            .hero-dot {
+                width: 9px;
+                height: 9px;
+                padding: 0;
+                border: 0;
+                border-radius: 50%;
+                background: rgba(255,255,255,.5);
+                cursor: pointer;
+            }
+
+            .hero-dot.active {
+                background: #fff;
+                transform: scale(1.25);
+            }
+
+            @keyframes heroFade {
+                from { opacity: 0; transform: translateY(10px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+
+            @media (max-width: 700px) {
+                .hero-carousel {
+                    min-height: 520px;
+                }
+
+                .hero-services {
+                    grid-template-columns: 1fr;
+                }
+
+                .hero-course-list {
+                    font-size: .8rem;
+                }
+
+                .hero-slide h2 {
+                    font-size: 1.65rem;
+                }
+            }
+        </style>
+
+        <script>
+            (function () {
+                const slides = document.querySelectorAll('.hero-slide');
+                const dots = document.querySelectorAll('.hero-dot');
+                const prev = document.querySelector('.hero-prev');
+                const next = document.querySelector('.hero-next');
+                let current = 0;
+                let timer;
+
+                function showSlide(index) {
+                    current = (index + slides.length) % slides.length;
+                    slides.forEach((slide, i) => slide.classList.toggle('active', i === current));
+                    dots.forEach((dot, i) => dot.classList.toggle('active', i === current));
+                }
+
+                function startAutoPlay() {
+                    clearInterval(timer);
+                    timer = setInterval(() => showSlide(current + 1), 7000);
+                }
+
+                prev.addEventListener('click', () => {
+                    showSlide(current - 1);
+                    startAutoPlay();
+                });
+
+                next.addEventListener('click', () => {
+                    showSlide(current + 1);
+                    startAutoPlay();
+                });
+
+                dots.forEach((dot, i) => {
+                    dot.addEventListener('click', () => {
+                        showSlide(i);
+                        startAutoPlay();
+                    });
+                });
+
+                showSlide(0);
+                startAutoPlay();
+            })();
+        </script>
     </section>
 
     <!-- ===== SERVIÇOS ===== -->
