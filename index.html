@@ -3,514 +3,1417 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Casa do Caminhoneiro | Sua Casa de Negócios</title>
-    <meta name="description" content="Soluções completas para quem move o Brasil. RNTRC/ANTT Assessoria especializada para Caminhoneiros Autônomos e Transportadoras. Tudo que precisa você encontra aqui!">
+
+    <meta
+        name="description"
+        content="Soluções completas para quem move o Brasil. RNTRC/ANTT, assessoria especializada, serviços, produtos e Marketplace de caminhões."
+    >
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    >
+
     <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <!-- ===== HEADER ===== -->
-    <header class="header">
-        <div class="container">
-            <a href="#" class="logo">
-                <img src="assets/images/logo.png" alt="Casa do Caminhoneiro">
-            </a>
-            <nav>
-                <ul>
-                    <li><a href="#inicio">Início</a></li>
-                    <li><a href="#servicos">Serviços</a></li>
-                    <li><a href="#produtos">Produtos</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
-            <a href="https://api.whatsapp.com/send?phone=5533999892648" class="btn-whatsapp" target="_blank">
-                <i class="fab fa-whatsapp"></i> WhatsApp
-            </a>
-            <div class="menu-mobile">
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
-    </header>
 
-    <!-- ===== HERO ===== -->
-    <section class="hero" id="inicio">
-        <div class="overlay"></div>
+    <style>
+        /* =====================================================
+           BOTÃO MARKETPLACE
+        ===================================================== */
 
-        <!-- CARROSSEL DE CONTEÚDO SOBRE A IMAGEM -->
-        <div class="hero-content hero-carousel">
-            <div class="hero-slide active">
-                <span class="hero-kicker">BEM-VINDO À</span>
-                <h2>CASA DO CAMINHONEIRO</h2>
-                <p>Soluções completas para quem move o Brasil. RNTRC/ANTT. Assessoria especializada para Caminhoneiros Autônomos e Transportadoras. Tudo que precisa você encontra aqui!</p>
-            </div>
+        .btn-marketplace {
+            background: #000000;
+            color: #ffffff !important;
+            padding: 10px 16px;
+            border-radius: 7px;
+            font-weight: 700;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            transition: .25s ease;
+        }
 
-            <div class="hero-slide">
-                <span class="hero-kicker">CAPACITAÇÃO PROFISSIONAL</span>
-                <h2>ESPECIALIZADA PARA TRANSPORTADORES</h2>
-                <p>Formação e atualização para profissionais do transporte, com cursos voltados à segurança, regulamentação e operação.</p>
-                <h4>CURSOS EM DESTAQUE</h4>
-                <ul class="hero-course-list">
-                    <li><strong>Curso MOPP</strong> — Movimentação Operacional de Produtos Perigosos. Formação e Atualização.</li>
-                    <li><strong>Cargas Indivisíveis</strong> — Transporte de Cargas Excepcionais e Excedentes.</li>
-                    <li><strong>Escolar e Emergência</strong> — Transporte Escolar e Veículos de Emergência. Regulamentação e Segurança.</li>
-                    <li><strong>Passageiro Coletivo</strong> — Transporte Coletivo de Passageiros. Normas e Condução Defensiva.</li>
-                    <li><strong>Curso NR-20 / NR-35</strong> — Segurança no Trabalho com Inflamáveis e em Altura.</li>
-                </ul>
-            </div>
+        .btn-marketplace:hover {
+            background: #222222;
+            transform: translateY(-2px);
+        }
 
-            <div class="hero-slide">
-                <span class="hero-kicker">SOLUÇÕES COMPLETAS</span>
-                <h2>PARA SEU NEGÓCIO DE TRANSPORTES</h2>
-                <div class="hero-services">
-                    <div><strong>Consórcio</strong><span>Planos de aquisição programada de caminhões e carretas com taxas competitivas.</span></div>
-                    <div><strong>Rastreador</strong><span>Monitoramento em tempo real e segurança avançada para sua frota.</span></div>
-                    <div><strong>Proteção Veicular</strong><span>Cobertura abrangente contra roubo, furto, colisão e terceiros.</span></div>
-                    <div><strong>Seguros</strong><span>Parcerias com as melhores seguradoras para todos os tipos de risco.</span></div>
-                    <div><strong>Venda de Carretas e Caminhões</strong><span>Novos e seminovos revisados e prontos para rodar.</span></div>
-                    <div><strong>Financiamentos</strong><span>Crédito facilitado e linhas de financiamento personalizadas.</span></div>
-                </div>
-            </div>
+        /* =====================================================
+           HERO CAROUSEL
+        ===================================================== */
 
-            <div class="hero-carousel-controls">
-                <button class="hero-prev" aria-label="Slide anterior">&#10094;</button>
-                <div class="hero-dots" aria-label="Navegação do carrossel">
-                    <button class="hero-dot active" aria-label="Slide 1"></button>
-                    <button class="hero-dot" aria-label="Slide 2"></button>
-                    <button class="hero-dot" aria-label="Slide 3"></button>
-                </div>
-                <button class="hero-next" aria-label="Próximo slide">&#10095;</button>
-            </div>
+        .hero-carousel {
+            position: relative;
+            z-index: 2;
+            width: min(900px, 92%);
+            min-height: 430px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            margin: 0 auto;
+        }
 
-            <div class="hero-buttons">
-                <a href="#contato" class="btn btn-primary">Fale Conosco</a>
-                <a href="#servicos" class="btn btn-secondary">Nossos Serviços</a>
-            </div>
-        </div>
+        .hero-slide {
+            display: none;
+            animation: heroFade .55s ease;
+        }
 
-        <style>
+        .hero-slide.active {
+            display: block;
+        }
+
+        .hero-kicker {
+            display: inline-block;
+            margin-bottom: 8px;
+            font-size: .95rem;
+            font-weight: 800;
+            letter-spacing: 2px;
+        }
+
+        .hero-slide h2 {
+            margin-bottom: 14px;
+        }
+
+        .hero-slide h4 {
+            margin: 18px 0 10px;
+            font-size: 1rem;
+            letter-spacing: 1px;
+        }
+
+        .hero-course-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 auto;
+            max-width: 760px;
+            text-align: left;
+            display: grid;
+            gap: 7px;
+            font-size: .92rem;
+        }
+
+        .hero-course-list li {
+            background: rgba(0,0,0,.28);
+            padding: 7px 10px;
+            border-radius: 6px;
+        }
+
+        .hero-services {
+            max-width: 850px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 9px;
+            text-align: left;
+        }
+
+        .hero-services div {
+            background: rgba(0,0,0,.28);
+            padding: 9px 11px;
+            border-radius: 7px;
+        }
+
+        .hero-services strong,
+        .hero-services span {
+            display: block;
+        }
+
+        .hero-services strong {
+            margin-bottom: 3px;
+        }
+
+        .hero-services span {
+            font-size: .84rem;
+            line-height: 1.35;
+        }
+
+        .hero-carousel-controls {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 14px;
+            margin-top: 18px;
+        }
+
+        .hero-prev,
+        .hero-next {
+            border: 0;
+            background: rgba(0,0,0,.35);
+            color: #fff;
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        .hero-dots {
+            display: flex;
+            gap: 7px;
+        }
+
+        .hero-dot {
+            width: 9px;
+            height: 9px;
+            padding: 0;
+            border: 0;
+            border-radius: 50%;
+            background: rgba(255,255,255,.5);
+            cursor: pointer;
+        }
+
+        .hero-dot.active {
+            background: #fff;
+            transform: scale(1.25);
+        }
+
+        @keyframes heroFade {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 700px) {
+
             .hero-carousel {
-                position: relative;
-                z-index: 2;
-                width: min(900px, 92%);
-                min-height: 430px;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                text-align: center;
-                margin: 0 auto;
-            }
-
-            .hero-slide {
-                display: none;
-                animation: heroFade .55s ease;
-            }
-
-            .hero-slide.active {
-                display: block;
-            }
-
-            .hero-kicker {
-                display: inline-block;
-                margin-bottom: 8px;
-                font-size: .95rem;
-                font-weight: 800;
-                letter-spacing: 2px;
-            }
-
-            .hero-slide h2 {
-                margin-bottom: 14px;
-            }
-
-            .hero-slide h4 {
-                margin: 18px 0 10px;
-                font-size: 1rem;
-                letter-spacing: 1px;
-            }
-
-            .hero-course-list {
-                list-style: none;
-                padding: 0;
-                margin: 0 auto;
-                max-width: 760px;
-                text-align: left;
-                display: grid;
-                gap: 7px;
-                font-size: .92rem;
-            }
-
-            .hero-course-list li {
-                background: rgba(0,0,0,.28);
-                padding: 7px 10px;
-                border-radius: 6px;
+                min-height: 520px;
             }
 
             .hero-services {
-                max-width: 850px;
-                margin: 0 auto;
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                gap: 9px;
-                text-align: left;
+                grid-template-columns: 1fr;
             }
 
-            .hero-services div {
-                background: rgba(0,0,0,.28);
-                padding: 9px 11px;
-                border-radius: 7px;
+            .hero-course-list {
+                font-size: .8rem;
             }
 
-            .hero-services strong,
-            .hero-services span {
-                display: block;
+            .hero-slide h2 {
+                font-size: 1.65rem;
             }
 
-            .hero-services strong {
-                margin-bottom: 3px;
+            .btn-marketplace {
+                padding: 9px 12px;
+                font-size: 14px;
             }
+        }
+    </style>
+</head>
 
-            .hero-services span {
-                font-size: .84rem;
-                line-height: 1.35;
-            }
+<body>
 
-            .hero-carousel-controls {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                gap: 14px;
-                margin-top: 18px;
-            }
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
 
-            .hero-prev,
-            .hero-next {
-                border: 0;
-                background: rgba(0,0,0,.35);
-                color: #fff;
-                width: 34px;
-                height: 34px;
-                border-radius: 50%;
-                cursor: pointer;
-                font-size: 18px;
-            }
+    <header class="header">
 
-            .hero-dots {
-                display: flex;
-                gap: 7px;
-            }
+        <div class="container">
 
-            .hero-dot {
-                width: 9px;
-                height: 9px;
-                padding: 0;
-                border: 0;
-                border-radius: 50%;
-                background: rgba(255,255,255,.5);
-                cursor: pointer;
-            }
+            <a href="#inicio" class="logo">
+                <img
+                    src="assets/images/logo.png"
+                    alt="Casa do Caminhoneiro"
+                >
+            </a>
 
-            .hero-dot.active {
-                background: #fff;
-                transform: scale(1.25);
-            }
+            <nav>
+                <ul>
 
-            @keyframes heroFade {
-                from { opacity: 0; transform: translateY(10px); }
-                to { opacity: 1; transform: translateY(0); }
-            }
+                    <li>
+                        <a href="#inicio">
+                            Início
+                        </a>
+                    </li>
 
-            @media (max-width: 700px) {
-                .hero-carousel {
-                    min-height: 520px;
-                }
+                    <li>
+                        <a href="#servicos">
+                            Serviços
+                        </a>
+                    </li>
 
-                .hero-services {
-                    grid-template-columns: 1fr;
-                }
+                    <li>
+                        <a href="#produtos">
+                            Produtos
+                        </a>
+                    </li>
 
-                .hero-course-list {
-                    font-size: .8rem;
-                }
+                    <li>
+                        <a href="#sobre">
+                            Sobre
+                        </a>
+                    </li>
 
-                .hero-slide h2 {
-                    font-size: 1.65rem;
-                }
-            }
-        </style>
+                    <li>
+                        <a href="#contato">
+                            Contato
+                        </a>
+                    </li>
 
-        <script>
-            (function () {
-                const slides = document.querySelectorAll('.hero-slide');
-                const dots = document.querySelectorAll('.hero-dot');
-                const prev = document.querySelector('.hero-prev');
-                const next = document.querySelector('.hero-next');
-                let current = 0;
-                let timer;
+                    <!-- =================================================
+                         NOVO LINK PARA O MARKETPLACE
+                    ================================================== -->
 
-                function showSlide(index) {
-                    current = (index + slides.length) % slides.length;
-                    slides.forEach((slide, i) => slide.classList.toggle('active', i === current));
-                    dots.forEach((dot, i) => dot.classList.toggle('active', i === current));
-                }
+                    <li>
+                        <a
+                            href="https://casa-do-caminhoneiro-mvp-a3.vercel.app/"
+                            class="btn-marketplace"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            title="Acessar Marketplace Casa do Caminhoneiro"
+                        >
+                            <i class="fas fa-truck"></i>
+                            Marketplace
+                        </a>
+                    </li>
 
-                function startAutoPlay() {
-                    clearInterval(timer);
-                    timer = setInterval(() => showSlide(current + 1), 7000);
-                }
+                </ul>
+            </nav>
 
-                prev.addEventListener('click', () => {
-                    showSlide(current - 1);
-                    startAutoPlay();
-                });
+            <a
+                href="https://api.whatsapp.com/send?phone=5533999892648"
+                class="btn-whatsapp"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <i class="fab fa-whatsapp"></i>
+                WhatsApp
+            </a>
 
-                next.addEventListener('click', () => {
-                    showSlide(current + 1);
-                    startAutoPlay();
-                });
+            <div class="menu-mobile">
+                <i class="fas fa-bars"></i>
+            </div>
 
-                dots.forEach((dot, i) => {
-                    dot.addEventListener('click', () => {
-                        showSlide(i);
-                        startAutoPlay();
-                    });
-                });
+        </div>
 
-                showSlide(0);
-                startAutoPlay();
-            })();
-        </script>
+    </header>
+
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
+    <section class="hero" id="inicio">
+
+        <div class="overlay"></div>
+
+        <div class="hero-content hero-carousel">
+
+            <!-- SLIDE 1 -->
+
+            <div class="hero-slide active">
+
+                <span class="hero-kicker">
+                    BEM-VINDO À
+                </span>
+
+                <h2>
+                    CASA DO CAMINHONEIRO
+                </h2>
+
+                <p>
+                    Soluções completas para quem move o Brasil.
+                    RNTRC/ANTT. Assessoria especializada para
+                    Caminhoneiros Autônomos e Transportadoras.
+                    Tudo que precisa você encontra aqui!
+                </p>
+
+            </div>
+
+
+            <!-- SLIDE 2 -->
+
+            <div class="hero-slide">
+
+                <span class="hero-kicker">
+                    CAPACITAÇÃO PROFISSIONAL
+                </span>
+
+                <h2>
+                    ESPECIALIZADA PARA TRANSPORTADORES
+                </h2>
+
+                <p>
+                    Formação e atualização para profissionais
+                    do transporte, com cursos voltados à
+                    segurança, regulamentação e operação.
+                </p>
+
+                <h4>
+                    CURSOS EM DESTAQUE
+                </h4>
+
+                <ul class="hero-course-list">
+
+                    <li>
+                        <strong>Curso MOPP</strong>
+                        — Movimentação Operacional de Produtos
+                        Perigosos. Formação e Atualização.
+                    </li>
+
+                    <li>
+                        <strong>Cargas Indivisíveis</strong>
+                        — Transporte de Cargas Excepcionais
+                        e Excedentes.
+                    </li>
+
+                    <li>
+                        <strong>Escolar e Emergência</strong>
+                        — Transporte Escolar e Veículos de
+                        Emergência.
+                    </li>
+
+                    <li>
+                        <strong>Passageiro Coletivo</strong>
+                        — Transporte Coletivo de Passageiros.
+                    </li>
+
+                    <li>
+                        <strong>Curso NR-20 / NR-35</strong>
+                        — Segurança no Trabalho.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- SLIDE 3 -->
+
+            <div class="hero-slide">
+
+                <span class="hero-kicker">
+                    SOLUÇÕES COMPLETAS
+                </span>
+
+                <h2>
+                    PARA SEU NEGÓCIO DE TRANSPORTES
+                </h2>
+
+                <div class="hero-services">
+
+                    <div>
+                        <strong>
+                            Consórcio
+                        </strong>
+
+                        <span>
+                            Planos de aquisição programada
+                            de caminhões e carretas.
+                        </span>
+                    </div>
+
+                    <div>
+                        <strong>
+                            Rastreador
+                        </strong>
+
+                        <span>
+                            Monitoramento em tempo real
+                            e segurança para sua frota.
+                        </span>
+                    </div>
+
+                    <div>
+                        <strong>
+                            Proteção Veicular
+                        </strong>
+
+                        <span>
+                            Cobertura contra roubo, furto,
+                            colisão e terceiros.
+                        </span>
+                    </div>
+
+                    <div>
+                        <strong>
+                            Seguros
+                        </strong>
+
+                        <span>
+                            Parcerias com seguradoras
+                            para diversos riscos.
+                        </span>
+                    </div>
+
+                    <div>
+                        <strong>
+                            Venda de Carretas e Caminhões
+                        </strong>
+
+                        <span>
+                            Novos e seminovos revisados.
+                        </span>
+                    </div>
+
+                    <div>
+                        <strong>
+                            Financiamentos
+                        </strong>
+
+                        <span>
+                            Crédito facilitado e linhas
+                            personalizadas.
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CONTROLES -->
+
+            <div class="hero-carousel-controls">
+
+                <button
+                    class="hero-prev"
+                    aria-label="Slide anterior"
+                >
+                    &#10094;
+                </button>
+
+                <div
+                    class="hero-dots"
+                    aria-label="Navegação do carrossel"
+                >
+
+                    <button
+                        class="hero-dot active"
+                        aria-label="Slide 1"
+                    ></button>
+
+                    <button
+                        class="hero-dot"
+                        aria-label="Slide 2"
+                    ></button>
+
+                    <button
+                        class="hero-dot"
+                        aria-label="Slide 3"
+                    ></button>
+
+                </div>
+
+                <button
+                    class="hero-next"
+                    aria-label="Próximo slide"
+                >
+                    &#10095;
+                </button>
+
+            </div>
+
+
+            <!-- =================================================
+                 BOTÕES HERO
+            ================================================== -->
+
+            <div class="hero-buttons">
+
+                <!-- NOVO BOTÃO MARKETPLACE -->
+
+                <a
+                    href="https://casa-do-caminhoneiro-mvp-a3.vercel.app/"
+                    class="btn btn-primary"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <i class="fas fa-truck"></i>
+                    Ver Caminhões
+                </a>
+
+                <a
+                    href="#contato"
+                    class="btn btn-secondary"
+                >
+                    Fale Conosco
+                </a>
+
+            </div>
+
+        </div>
+
     </section>
 
-    <!-- ===== SERVIÇOS ===== -->
-    <section class="servicos section" id="servicos">
+
+    <!-- =====================================================
+         SERVIÇOS
+    ====================================================== -->
+
+    <section
+        class="servicos section"
+        id="servicos"
+    >
+
         <div class="container">
+
             <div class="section-header">
-                <h2 class="section-title">Nossos Serviços</h2>
-                <p class="section-subtitle">Tudo o que você precisa para sua jornada na estrada</p>
+
+                <h2 class="section-title">
+                    Nossos Serviços
+                </h2>
+
+                <p class="section-subtitle">
+                    Tudo o que você precisa para sua jornada na estrada
+                </p>
+
             </div>
+
             <div class="servicos-grid">
-                <!-- Card 1 -->
+
+
+                <!-- CARD 1 -->
+
                 <div class="card fade-up">
+
                     <div class="card-icon">
                         <i class="fas fa-truck-loading"></i>
                     </div>
-                    <h3>Frete e Cargas</h3>
-                    <p>Conectamos caminhoneiros a transportadoras com as melhores oportunidades de frete.</p>
-                    <a href="#" class="btn-card">Saiba Mais</a>
+
+                    <h3>
+                        Frete e Cargas
+                    </h3>
+
+                    <p>
+                        Conectamos caminhoneiros a transportadoras
+                        com as melhores oportunidades de frete.
+                    </p>
+
+                    <a
+                        href="#contato"
+                        class="btn-card"
+                    >
+                        Saiba Mais
+                    </a>
+
                 </div>
-                <!-- Card 2 -->
+
+
+                <!-- CARD 2 -->
+
                 <div class="card fade-up">
+
                     <div class="card-icon">
                         <i class="fas fa-tools"></i>
                     </div>
-                    <h3>Manutenção</h3>
-                    <p>Oficinas parceiras em todo o Brasil para manutenção preventiva e corretiva.</p>
-                    <a href="https://api.whatsapp.com/send?phone=5533999892648" class="btn-card">Saiba Mais</a>
+
+                    <h3>
+                        Manutenção
+                    </h3>
+
+                    <p>
+                        Oficinas parceiras em todo o Brasil
+                        para manutenção preventiva e corretiva.
+                    </p>
+
+                    <a
+                        href="https://api.whatsapp.com/send?phone=5533999892648"
+                        class="btn-card"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Saiba Mais
+                    </a>
+
                 </div>
-                <!-- Card 3 -->
+
+
+                <!-- CARD 3 -->
+
                 <div class="card fade-up">
+
                     <div class="card-icon">
                         <i class="fas fa-credit-card"></i>
                     </div>
-                    <h3>Financiamento</h3>
-                    <p>Linhas de crédito exclusivas para compra de caminhões e implementos.</p>
-                    <a href="https://api.whatsapp.com/send?phone=5533999892648" class="btn-card">Saiba Mais</a>
+
+                    <h3>
+                        Financiamento
+                    </h3>
+
+                    <p>
+                        Linhas de crédito exclusivas para compra
+                        de caminhões e implementos.
+                    </p>
+
+                    <a
+                        href="https://api.whatsapp.com/send?phone=5533999892648"
+                        class="btn-card"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Saiba Mais
+                    </a>
+
                 </div>
-                <!-- Card 4 -->
+
+
+                <!-- CARD 4 -->
+
                 <div class="card fade-up">
+
                     <div class="card-icon">
                         <i class="fas fa-shield-alt"></i>
                     </div>
-                    <h3>Seguros</h3>
-                    <p>Proteção completa para seu veículo, carga e vida na estrada.</p>
-                    <a href="https://api.whatsapp.com/send?phone=5533999892648" class="btn-card">Saiba Mais</a>
+
+                    <h3>
+                        Seguros
+                    </h3>
+
+                    <p>
+                        Proteção completa para seu veículo,
+                        carga e vida na estrada.
+                    </p>
+
+                    <a
+                        href="https://api.whatsapp.com/send?phone=5533999892648"
+                        class="btn-card"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Saiba Mais
+                    </a>
+
                 </div>
+
             </div>
+
         </div>
+
     </section>
 
-    <!-- ===== PRODUTOS ===== -->
-    <section class="produtos section" id="produtos">
+
+    <!-- =====================================================
+         PRODUTOS / SERVIÇOS EM DESTAQUE
+    ====================================================== -->
+
+    <section
+        class="produtos section"
+        id="produtos"
+    >
+
         <div class="container">
+
             <div class="section-header">
-                <h2 class="section-title">Serviços em Destaque</h2>
-                <p class="section-subtitle">Atendimento em todo o território brasileiro</p>
+
+                <h2 class="section-title">
+                    Serviços em Destaque
+                </h2>
+
+                <p class="section-subtitle">
+                    Atendimento em todo o território brasileiro
+                </p>
+
             </div>
+
+
             <div class="produtos-grid">
-                <!-- Produto 1 -->
+
+
+                <!-- PRODUTO 1 -->
+
                 <div class="produto-card fade-up">
+
                     <div class="produto-img">
-                        <img src="assets/images/servico1.jpg" alt="Pneus Michelin">
+
+                        <img
+                            src="assets/images/servico1.jpg"
+                            alt="Soluções ANTT RNTRC"
+                        >
+
                     </div>
+
                     <div class="produto-info">
-                        <h3>Soluções Completas para sua ANTT RNTRC</h3>
-                       
-                        
-                        <a href="https://api.whatsapp.com/send?phone=5533999892648" class="btn btn-primary">SAIBA MAIS</a>
+
+                        <h3>
+                            Soluções Completas para sua ANTT RNTRC
+                        </h3>
+
+                        <a
+                            href="https://api.whatsapp.com/send?phone=5533999892648"
+                            class="btn btn-primary"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            SAIBA MAIS
+                        </a>
+
                     </div>
+
                 </div>
-                <!-- Produto 2 -->
+
+
+                <!-- PRODUTO 2 -->
+
                 <div class="produto-card fade-up">
+
                     <div class="produto-img">
-                        <img src="assets/images/servico2.jpg" alt="Bateria Moura">
+
+                        <img
+                            src="assets/images/servico2.jpg"
+                            alt="Soluções para transportadores"
+                        >
+
                     </div>
+
                     <div class="produto-info">
-                        <h3>Soluções Completas para seu Negócio de Transportes</h3>                        
-                        <a href="https://api.whatsapp.com/send?phone=5533999892648" class="btn btn-primary">SAIBA MAIS</a>
+
+                        <h3>
+                            Soluções Completas para seu Negócio de Transportes
+                        </h3>
+
+                        <a
+                            href="https://api.whatsapp.com/send?phone=5533999892648"
+                            class="btn btn-primary"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            SAIBA MAIS
+                        </a>
+
                     </div>
+
                 </div>
-                <!-- Produto 3 -->
+
+
+                <!-- PRODUTO 3 -->
+
                 <div class="produto-card fade-up">
+
                     <div class="produto-img">
-                        <img src="assets/images/servico3.jpg" alt="Lubrificante Shell">
+
+                        <img
+                            src="assets/images/servico3.jpg"
+                            alt="Capacitação para transportadores"
+                        >
+
                     </div>
+
                     <div class="produto-info">
-                        <h3>Capacitação especializada para Transportadores</h3>
-                        
-                        <a href="https://api.whatsapp.com/send?phone=5533999892648" class="btn btn-primary">SAIBA MAIS</a>
+
+                        <h3>
+                            Capacitação especializada para Transportadores
+                        </h3>
+
+                        <a
+                            href="https://api.whatsapp.com/send?phone=5533999892648"
+                            class="btn btn-primary"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            SAIBA MAIS
+                        </a>
+
                     </div>
+
                 </div>
+
             </div>
+
         </div>
+
     </section>
 
-    <!-- ===== SOBRE ===== -->
-    <section class="sobre section" id="sobre">
+
+    <!-- =====================================================
+         SOBRE
+    ====================================================== -->
+
+    <section
+        class="sobre section"
+        id="sobre"
+    >
+
         <div class="container">
+
             <div class="sobre-content">
+
                 <div class="sobre-img fade-up">
-                    <img src="assets/images/sobre-caminhoneiro.png" alt="Caminhoneiro profissional">
+
+                    <img
+                        src="assets/images/sobre-caminhoneiro.png"
+                        alt="Caminhoneiro profissional"
+                    >
+
                 </div>
+
                 <div class="sobre-text fade-up">
-                    <h2>Quem Somos</h2>
-                    <p>A <strong>Casa do Caminhoneiro</strong> nasceu para ser o ponto de referência para profissionais do transporte. Com mais de 10 anos de experiência, oferecemos soluções completas para caminhoneiros autônomos, transportadoras e frotistas.</p>
-                    <p>Nossa missão é simplificar a vida na estrada, conectando pessoas, negócios e oportunidades.</p>
-                    <a href="#" class="btn btn-primary">Conheça Nossa História</a>
+
+                    <h2>
+                        Quem Somos
+                    </h2>
+
+                    <p>
+                        A <strong>Casa do Caminhoneiro</strong>
+                        nasceu para ser o ponto de referência
+                        para profissionais do transporte.
+                        Com mais de 10 anos de experiência,
+                        oferecemos soluções completas para
+                        caminhoneiros autônomos,
+                        transportadoras e frotistas.
+                    </p>
+
+                    <p>
+                        Nossa missão é simplificar a vida na
+                        estrada, conectando pessoas,
+                        negócios e oportunidades.
+                    </p>
+
+                    <a
+                        href="#contato"
+                        class="btn btn-primary"
+                    >
+                        Conheça Nossa História
+                    </a>
+
                 </div>
+
             </div>
+
         </div>
+
     </section>
 
-    <!-- ===== CTA ===== -->
+
+    <!-- =====================================================
+         CTA
+    ====================================================== -->
+
     <section class="cta">
+
         <div class="container">
+
             <div class="cta-content">
-                <h2>Pronto para levar seu negócio mais longe?</h2>
-                <p>Entre em contato e descubra como podemos ajudar você a crescer.</p>
-                <a href="#contato" class="btn btn-secondary">Fale Conosco</a>
+
+                <h2>
+                    Pronto para levar seu negócio mais longe?
+                </h2>
+
+                <p>
+                    Entre em contato e descubra como podemos
+                    ajudar você a crescer.
+                </p>
+
+                <a
+                    href="#contato"
+                    class="btn btn-secondary"
+                >
+                    Fale Conosco
+                </a>
+
             </div>
+
         </div>
+
     </section>
 
-    <!-- ===== CONTATO ===== -->
-    <section class="contato section" id="contato">
+
+    <!-- =====================================================
+         CONTATO
+    ====================================================== -->
+
+    <section
+        class="contato section"
+        id="contato"
+    >
+
         <div class="container">
+
             <div class="section-header">
-                <h2 class="section-title">Fale Conosco</h2>
-                <p class="section-subtitle">Estamos aqui para ajudar você</p>
+
+                <h2 class="section-title">
+                    Fale Conosco
+                </h2>
+
+                <p class="section-subtitle">
+                    Estamos aqui para ajudar você
+                </p>
+
             </div>
+
+
             <div class="contato-content">
-                <form class="contato-form fade-up">
+
+
+                <form
+                    class="contato-form fade-up"
+                >
+
                     <div class="form-group">
-                        <input type="text" placeholder="Nome" required>
+
+                        <input
+                            type="text"
+                            placeholder="Nome"
+                            required
+                        >
+
                     </div>
+
+
                     <div class="form-group">
-                        <input type="email" placeholder="E-mail" required>
+
+                        <input
+                            type="email"
+                            placeholder="E-mail"
+                            required
+                        >
+
                     </div>
+
+
                     <div class="form-group">
-                        <input type="tel" placeholder="Telefone" required>
+
+                        <input
+                            type="tel"
+                            placeholder="Telefone"
+                            required
+                        >
+
                     </div>
+
+
                     <div class="form-group">
-                        <textarea placeholder="Mensagem" rows="5" required></textarea>
+
+                        <textarea
+                            placeholder="Mensagem"
+                            rows="5"
+                            required
+                        ></textarea>
+
                     </div>
-                    <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary"
+                    >
+                        Enviar Mensagem
+                    </button>
+
                 </form>
+
+
                 <div class="contato-info fade-up">
+
+
                     <div class="info-item">
+
                         <i class="fas fa-map-marker-alt"></i>
+
                         <div>
-                            <h3>Endereço</h3>
-                            <p>Rio-Bahia, 402, 1234 - Vila Isa<br>Gov. Valadares/MG - CEP  35044-000</p>
+
+                            <h3>
+                                Endereço
+                            </h3>
+
+                            <p>
+                                Rio-Bahia, 402, 1234 - Vila Isa<br>
+                                Gov. Valadares/MG -
+                                CEP 35044-000
+                            </p>
+
                         </div>
+
                     </div>
+
+
                     <div class="info-item">
+
                         <i class="fas fa-phone-alt"></i>
+
                         <div>
-                            <h3>Telefone</h3>
-                            <p>(33) 9989-2648 </p>
+
+                            <h3>
+                                Telefone
+                            </h3>
+
+                            <p>
+                                (33) 9989-2648
+                            </p>
+
                         </div>
+
                     </div>
-                    
-                            <h3></h3>
-                            <p></p>
-                        </div>
-                    </div>
+
+
                 </div>
+
             </div>
+
         </div>
+
     </section>
 
-    <!-- ===== FOOTER ===== -->
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
     <footer class="footer">
+
         <div class="container">
+
             <div class="footer-grid">
+
+
+                <!-- LOGO -->
+
                 <div class="footer-logo">
-                    <img src="assets/images/logo-casa-do-caminhoneiro-white.svg" alt="Casa do Caminhoneiro">
-                    <p>Sua casa de negócios para o transporte rodoviário.</p>
+
+                    <img
+                        src="assets/images/logo-casa-do-caminhoneiro-white.svg"
+                        alt="Casa do Caminhoneiro"
+                    >
+
+                    <p>
+                        Sua casa de negócios para o
+                        transporte rodoviário.
+                    </p>
+
+
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+
                     </div>
+
                 </div>
+
+
+                <!-- LINKS RÁPIDOS -->
+
                 <div class="footer-links">
-                    <h3>Links Rápidos</h3>
+
+                    <h3>
+                        Links Rápidos
+                    </h3>
+
                     <ul>
-                        <li><a href="#inicio">Início</a></li>
-                        <li><a href="#servicos">Serviços</a></li>
-                        <li><a href="#produtos">Produtos</a></li>
-                        <li><a href="#sobre">Sobre</a></li>
-                        <li><a href="#contato">Contato</a></li>
+
+                        <li>
+                            <a href="#inicio">
+                                Início
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#servicos">
+                                Serviços
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#produtos">
+                                Produtos
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#sobre">
+                                Sobre
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#contato">
+                                Contato
+                            </a>
+                        </li>
+
+                        <!-- MARKETPLACE -->
+
+                        <li>
+                            <a
+                                href="https://casa-do-caminhoneiro-mvp-a3.vercel.app/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                🚛 Marketplace
+                            </a>
+                        </li>
+
                     </ul>
+
                 </div>
+
+
+                <!-- SERVIÇOS -->
+
                 <div class="footer-links">
-                    <h3>Serviços</h3>
+
+                    <h3>
+                        Serviços
+                    </h3>
+
                     <ul>
-                        <li><a href="#">Frete e Cargas</a></li>
-                        <li><a href="#">Manutenção</a></li>
-                        <li><a href="#">Financiamento</a></li>
-                        <li><a href="#">Seguros</a></li>
+
+                        <li>
+                            <a href="#">
+                                Frete e Cargas
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                Manutenção
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                Financiamento
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                Seguros
+                            </a>
+                        </li>
+
                     </ul>
+
                 </div>
+
+
+                <!-- NEWSLETTER -->
+
                 <div class="footer-newsletter">
-                    <h3>Newsletter</h3>
-                    <p>Receba novidades e oportunidades em primeira mão.</p>
+
+                    <h3>
+                        Newsletter
+                    </h3>
+
+                    <p>
+                        Receba novidades e oportunidades
+                        em primeira mão.
+                    </p>
+
                     <form>
-                        <input type="email" placeholder="Seu e-mail">
-                        <button type="submit" class="btn btn-primary">Inscrever-se</button>
+
+                        <input
+                            type="email"
+                            placeholder="Seu e-mail"
+                        >
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary"
+                        >
+                            Inscrever-se
+                        </button>
+
                     </form>
+
                 </div>
+
             </div>
+
+
+            <!-- RODAPÉ INFERIOR -->
+
             <div class="footer-bottom">
-                <p>&copy; 2023 Casa do Caminhoneiro. Todos os direitos reservados.</p>
+
+                <p>
+                    &copy; 2026 Casa do Caminhoneiro.
+                    Todos os direitos reservados.
+                </p>
+
                 <div class="footer-legal">
-                    <a href="#">Política de Privacidade</a>
-                    <a href="#">Termos de Uso</a>
+
+                    <a href="#">
+                        Política de Privacidade
+                    </a>
+
+                    <a href="#">
+                        Termos de Uso
+                    </a>
+
                 </div>
+
             </div>
+
         </div>
+
     </footer>
 
-    <!-- ===== BOTÃO WHATSAPP FLUTUANTE ===== -->
-    <a href="https://api.whatsapp.com/send?phone=5533999892648" class="whatsapp-float" target="_blank">
+
+    <!-- =====================================================
+         WHATSAPP FLUTUANTE
+    ====================================================== -->
+
+    <a
+        href="https://api.whatsapp.com/send?phone=5533999892648"
+        class="whatsapp-float"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Falar pelo WhatsApp"
+    >
         <i class="fab fa-whatsapp"></i>
     </a>
 
-    <!-- ===== SCRIPTS ===== -->
+
+    <!-- =====================================================
+         JAVASCRIPT DO CARROSSEL
+    ====================================================== -->
+
+    <script>
+
+        (function () {
+
+            const slides =
+                document.querySelectorAll('.hero-slide');
+
+            const dots =
+                document.querySelectorAll('.hero-dot');
+
+            const prev =
+                document.querySelector('.hero-prev');
+
+            const next =
+                document.querySelector('.hero-next');
+
+            let current = 0;
+
+            let timer;
+
+
+            function showSlide(index) {
+
+                current =
+                    (index + slides.length)
+                    % slides.length;
+
+                slides.forEach(
+                    (slide, i) => {
+
+                        slide.classList.toggle(
+                            'active',
+                            i === current
+                        );
+
+                    }
+                );
+
+
+                dots.forEach(
+                    (dot, i) => {
+
+                        dot.classList.toggle(
+                            'active',
+                            i === current
+                        );
+
+                    }
+                );
+
+            }
+
+
+            function startAutoPlay() {
+
+                clearInterval(timer);
+
+                timer = setInterval(
+                    () => showSlide(current + 1),
+                    7000
+                );
+
+            }
+
+
+            if (prev) {
+
+                prev.addEventListener(
+                    'click',
+                    () => {
+
+                        showSlide(current - 1);
+
+                        startAutoPlay();
+
+                    }
+                );
+
+            }
+
+
+            if (next) {
+
+                next.addEventListener(
+                    'click',
+                    () => {
+
+                        showSlide(current + 1);
+
+                        startAutoPlay();
+
+                    }
+                );
+
+            }
+
+
+            dots.forEach(
+                (dot, i) => {
+
+                    dot.addEventListener(
+                        'click',
+                        () => {
+
+                            showSlide(i);
+
+                            startAutoPlay();
+
+                        }
+                    );
+
+                }
+            );
+
+
+            showSlide(0);
+
+            startAutoPlay();
+
+        })();
+
+    </script>
+
+
+    <!-- SCRIPT PRINCIPAL -->
+
     <script src="js/script.js"></script>
+
 </body>
 </html>
